@@ -16,8 +16,12 @@ apt update -y
 apt get-update -y
 
 # for git and composer
-apt install git -y
-apt install composer -y
+apt-get install git -y
+apt-get install curl -y
+curl -s https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
+composer
+# apt install composer -y
 
 
 # for php 7.4
