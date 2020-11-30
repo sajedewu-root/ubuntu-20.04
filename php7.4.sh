@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Based on this script, we can install PHP 7.3 in the system
-# Here, we will install all the packages for PHP 7.3 in the system.
-# Install php7.3 in the linux (Ubuntu 18 or 19)
+# Based on this script, we can install PHP 7.4 in the system
+# Here, we will install all the packages for PHP 7.4 in the system.
+# Install php7.4 in the linux (Ubuntu 20)
 
 
 apt update -y
@@ -20,80 +20,46 @@ apt install git -y
 apt install composer -y
 
 
-# for php 7.3 
+# for php 7.4
 apt install libapache2-mod-php7.4 -y
-apt install libapache2-mod-php7.4-dbgsym -y
 apt install libphp7.4-embed -y
-apt install libphp7.4-embed-dbgsym -y 
 apt install php7.4 -y
 apt install php7.4-bcmath -y 
-apt install php7.4-bcmath-dbgsym -y 
 apt install php7.4-bz2 -y
-apt install php7.4-bz2-dbgsym -y
 apt install php7.4-cgi -y
-apt install php7.4-cgi-dbgsym -y
 apt install php7.4-cli -y
-apt install php7.4-cli-dbgsym -y
 apt install php7.4-common -y
-apt install php7.4-common-dbgsym -y
 apt install php7.4-curl -y
-apt install php7.4-curl-dbgsym -y
 apt install php7.4-dba -y
-apt install php7.4-dba-dbgsym -y
 apt install php7.4-dev -y
 apt install php7.4-enchant -y
-apt install php7.4-enchant-dbgsym -y
 apt install php7.4-fpm -y
-apt install php7.4-fpm-dbgsym -y 
 apt install php7.4-gd -y
-apt install php7.4-gd-dbgsym -y 
 apt install php7.4-gmp -y
-apt install php7.4-gmp-dbgsym -y 
 apt install php7.4-imap -y
-apt install php7.4-imap-dbgsym -y 
 apt install php7.4-interbase -y
-apt install php7.4-interbase-dbgsym -y 
 apt install php7.4-intl -y
-apt install php7.4-intl-dbgsym -y 
 apt install php7.4-json -y
-apt install php7.4-json-dbgsym -y 
 apt install php7.4-ldap -y
-apt install php7.4-ldap-dbgsym -y 
 apt install php7.4-mbstring -y
-apt install php7.4-mbstring-dbgsym -y 
 apt install php7.4-mysql -y
-apt install php7.4-mysql-dbgsym -y
 apt install php7.4-odbc -y
-apt install php7.4-odbc-dbgsym -y
 apt install php7.4-opcache -y
-apt install php7.4-opcache-dbgsym -y
 apt install php7.4-pgsql -y
-apt install php7.4-pgsql-dbgsym -y 
 apt install php7.4-phpdbg -y
-apt install php7.4-phpdbg-dbgsym -y 
 apt install php7.4-pspell -y
-apt install php7.4-pspell-dbgsym -y 
 apt install php7.4-readline -y
-apt install php7.4-readline-dbgsym -y 
 apt install php7.4-recode -y
-apt install php7.4-recode-dbgsym -y 
 apt install php7.4-snmp -y
-apt install php7.4-snmp-dbgsym -y 
 apt install php7.4-soap -y
-apt install php7.4-soap-dbgsym -y 
 apt install php7.4-sqlite3 -y
-apt install php7.4-sqlite3-dbgsym -y
 apt install php7.4-sybase -y
-apt install php7.4-sybase-dbgsym -y 
 apt install php7.4-tidy -y
-apt install php7.4-tidy-dbgsym -y 
 apt install php7.4-xml -y
-apt install php7.4-xml-dbgsym -y 
 apt install php7.4-xmlrpc -y
-apt install php7.4-xmlrpc-dbgsym -y 
 apt install php7.4-xsl -y
 apt install php7.4-zip -y
-apt install php7.4-zip-dbgsym -y
+
 
 cd /etc/php/7.4/apache2
 cp php.ini php.ini.bak
