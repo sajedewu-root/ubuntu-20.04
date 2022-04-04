@@ -14,6 +14,7 @@ add-apt-repository ppa:ondrej/php
 
 apt update -y
 apt get-update -y
+apt upgrade -y
 
 # for git and composer
 apt-get install git -y
