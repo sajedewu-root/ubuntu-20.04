@@ -9,6 +9,7 @@ hostnamectl set-hostname web-server
 
 apt update -y
 apt-get update -y
+apt upgrade -y
 
 apt install apache2 -y
 
