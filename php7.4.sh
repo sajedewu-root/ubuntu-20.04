@@ -19,6 +19,9 @@ apt upgrade -y
 # for git and composer
 apt-get install git -y
 apt-get install curl -y
+apt-get install unzip -y
+
+
 curl -s https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 composer
