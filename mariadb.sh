@@ -33,8 +33,11 @@ echo -n -e "\e[1;33mPlease Enter the database name: ---- \e[0m "; read DB
 
 mysql -u root -p$PASSWORD -e "CREATE DATABASE $DB;"
 mysql -u root -p$PASSWORD -e "CREATE USER '$CREATE_USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';"
-mysql -u root -p$PASSWORD -e "GRANT ALL PRIVILEGES ON *.* TO '$CREATE_USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';"
+mysql -u root -p$PASSWORD -e "GRANT ALL PRIVILEGES ON *.* TO '$CREATE_USER_NAME'@'localhost';"
+mysql -u root -p$PASSWORD -e "FLUSH PRIVILEGES;"
+clear
 
-echo "---------------------------------------------"
+echo "***************************************************************************"
 echo "       MariaDB installation has finished"
-echo "---------------------------------------------"
+echo "***************************************************************************"
+
