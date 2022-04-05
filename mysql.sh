@@ -37,7 +37,10 @@ mysql -u root -p$PASSWORD -e "CREATE DATABASE $DB;"
 
 # To assign the permission 
 mysql -u root -p$PASSWORD -e "CREATE USER '$CREATE_USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';"
-mysql -u root -p$PASSWORD -e "GRANT ALL PRIVILEGES ON *.* TO '$CREATE_USER_NAME'@'localhost' IDENTIFIED BY '$USER_PASSWORD';"
+mysql -u root -p$PASSWORD -e "GRANT ALL PRIVILEGES ON *.* TO '$CREATE_USER_NAME'@'localhost';"
+mysql -u root -p$PASSWORD -e "FLUSH PRIVILEGES;"
+
+
 
 echo "***************************************************************************"
 echo -n -e "  \e[1;32mMySql installation has finished: ----  \e[0m"
