@@ -6,14 +6,14 @@
 
 
 apt update -y
-apt get-update -y
+apt-get update -y
 apt install openssh-server -y
 
 apt install software-properties-common -y
 add-apt-repository ppa:ondrej/php
 
 apt update -y
-apt get-update -y
+apt-get update -y
 apt upgrade -y
 
 # for git and composer
