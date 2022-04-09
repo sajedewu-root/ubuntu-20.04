@@ -69,8 +69,8 @@ apt install php7.4-xsl -y
 apt install php7.4-zip -y
 
 
-cd /etc/php/7.4/apache2
-cp php.ini php.ini.bak
+cd /etc/php/7.4/cli/
+# cp php.ini php.ini.bak
 
 sed -i 's,^file_uploads =.*$,file_uploads = On,' php.ini
 sed -i 's,^allow_url_fopen =.*$,allow_url_fopen = On,' php.ini
@@ -79,6 +79,10 @@ sed -i 's,^memory_limit =.*$,memory_limit = 10G,' php.ini
 sed -i 's,^upload_max_filesize =.*$,upload_max_filesize = 1000M,' php.ini
 sed -i 's,^max_execution_time =.*$,max_execution_time = 18000,' php.ini
 sed -i 's,^date.timezone =.*$,date.timezone = America/Chicago,' php.ini
+sed -i 's,^zlib.output_compression =.*$,zlib.output_compression = on,' php.ini
+sed -i 's,^realpath_cache_size =.*$,realpath_cache_size = 10M,' php.ini
+sed -i 's,^realpath_cache_ttl =.*$,realpath_cache_ttl = 7200,' php.ini
+
 
 echo ""
 echo ""
@@ -93,6 +97,11 @@ grep '^memory_limit ' php.ini
 grep '^upload_max_filesize ' php.ini
 grep '^max_execution_time ' php.ini
 grep '^date.timezone ' php.ini
+grep '^zlib.output_compression ' php.ini
+grep '^realpath_cache_size ' php.ini
+grep '^realpath_cache_ttl ' php.ini
+
+
 
 echo ""
 echo ""
