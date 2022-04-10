@@ -20,6 +20,7 @@ apt upgrade -y
 apt-get install git -y
 apt-get install curl -y
 apt-get install unzip -y
+apt-get install vim -y
 
 curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
 HASH=`curl -sS https://composer.github.io/installer.sig`
