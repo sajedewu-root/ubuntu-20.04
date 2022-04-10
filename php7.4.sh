@@ -69,10 +69,10 @@ apt install php7.4-xmlrpc -y
 apt install php7.4-xsl -y
 apt install php7.4-zip -y
 
-path=$(php -i | grep /.+/php.ini -oE)
-phpconfile="$(dirname "${path}")"
-u_path="${phpconfile}"
-cd u_path
+
+# PHP configuration file located
+
+cd $(dirname "$(php -i | grep /.+/php.ini -oE)")
 
 sed -i 's,^file_uploads =.*$,file_uploads = On,' php.ini
 sed -i 's,^allow_url_fopen =.*$,allow_url_fopen = On,' php.ini
